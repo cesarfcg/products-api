@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/products")
 public class ProductController {
-    private ProductsService productsService;
+    private final ProductsService productsService;
 
     public ProductController(ProductsService productsService) {
         this.productsService = productsService;
@@ -25,9 +25,9 @@ public class ProductController {
     public ProductResponseDTO create(@RequestBody ProductRequestDTO productRequestDTO){
         return productsService.create(productRequestDTO);
     }
-    @PutMapping("/update")
-    public ProductEntity update(@RequestBody ProductEntity productEntity){
-        return productsService.update(productEntity);
+    @PutMapping("/update/{id}")
+    public ProductResponseDTO update(@PathVariable("id") Long id ,@RequestBody ProductRequestDTO dto){
+        return productsService.update(id,dto);
     }
     @DeleteMapping("/delete/{id}")
     public List<ProductEntity> delete(@PathVariable("id")Long id ){
