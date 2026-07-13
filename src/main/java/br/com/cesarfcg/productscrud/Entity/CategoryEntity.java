@@ -1,9 +1,6 @@
 package br.com.cesarfcg.productscrud.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,10 +9,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@Table(name = "TB_CATEGORIA")
 public class CategoryEntity {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @Column(name = "CAT_ID")
     Long id;
+    @Column(name = "CAT_NAME")
     String name;
 
 }
