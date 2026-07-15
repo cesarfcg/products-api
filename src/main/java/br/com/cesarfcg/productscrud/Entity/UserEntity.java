@@ -13,7 +13,18 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "TB_USER")
-public class UserEntity {
+public class UserEntity implements UserDetails {
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of();
+    }
+
+    @Override
+    public String getUsername() {
+        return login;
+    }
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_ID")
