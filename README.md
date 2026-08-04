@@ -56,14 +56,6 @@ Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 ```
 
-## Banco de Dados H2
-
-Console do H2:
-
-```text
-http://localhost:8080/h2-console
-```
-
 As configurações de acesso podem ser consultadas no arquivo `application.properties`.
 
 ## Testes
