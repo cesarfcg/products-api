@@ -75,3 +75,11 @@ src
 │   └── resources
 │       └── application.properties
 ```
+## Referências
+
+- Spring Boot Documentation: https://spring.io/projects/spring-boot
+- Spring Data JPA Documentation: https://spring.io/projects/spring-data-jpa
+- H2 Database Documentation: https://www.h2database.com/html/main.html
+- Lombok Documentation: https://projectlombok.org/
+- SpringDoc OpenAPI Documentation: https://springdoc.org/
+- Swagger Documentation: https://swagger.io/docs/
