@@ -58,10 +58,6 @@ http://localhost:8080/swagger-ui/index.html
 
 As configurações de acesso podem ser consultadas no arquivo `application.properties`.
 
-## Testes
-
-Os endpoints podem ser testados através do Swagger UI ou utilizando ferramentas como Postman e Insomnia.
-
 ## Estrutura do Projeto
 
 ```text
